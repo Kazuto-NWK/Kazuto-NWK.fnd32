@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>自己紹介</title>
+  <link rel="icon" href="C:\Users\1578880\Desktop\dig-foundations\DIG発表用\images\favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="script.js" async></script>
+</head>
+
+  <body>
+  <!-- ローディング画面  -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <div id="loading-screen"></div>
+  </div>
+
+    <input type="checkbox" id="popup">
+    <input type="checkbox" id="popup2">
+    <input type="checkbox" id="popup3">
+    <input type="checkbox" id="popup4">
+    <input type="checkbox" id="popup5" onchange ="myfunc()">
+
+  <div class="header w-inner">
+    <div class="logo">
+      <img src="images/DIG logo.png" alt="DIG基礎コース">
+      <h1>自分のことを今更ながら知ってもらおう！</h1>
+    </div>
+    <ul>
+      <li><a href="">トップ</a></li>
+      <li><label for="popup" id="txt_label">所属部署</label></li>
+      <li><label for="popup2" id="txt_label2">どんな仕事をしているの？</label></li>
+      <li><label for="popup3" id="txt_label3">趣味</label></li>
+      <li><label for="popup4" id="txt_label4">職場の場所</label></li>
+      <li><label for="popup5" id="txt_label5">本日の運勢は・・・</label></li>
+    </ul>
+  </div>
+
+
+
+  <div id="overlay">
+    <label for="popup" id="bg_gray"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+    <div id="window"> <!-- ウィンドウ部分 -->
+      <label for="popup" id="btn_cloth"> <!-- 閉じるボタン -->
+        <span></span>
+      </label>
+        <div id="msg"> <!-- ウィンドウのコンテンツ -->
+          <h2>所属部署</h2>
+          <p>トヨタ自動車(株)　東富士研究所管理部　試作課　部品加工係</p>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay2">
+    <label for="popup2" id="bg_gray2"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+    <div id="window2"> <!-- ウィンドウ部分 -->
+      <label for="popup2" id="btn_cloth2"> <!-- 閉じるボタン -->
+      <span></span>
+      </label>
+      <div id="msg2"> <!-- ウィンドウのコンテンツ -->
+        <h2>どんな仕事をしているの？</h2>
+        <p>様々な部署から依頼された部品・工具製作や
+          研究に必要な追加工など幅広くやっています！
+          扱う素材に関しては、鉄・ステンレス・銅・チタン・樹脂など様々です
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay3">
+    <label for="popup3" id="bg_gray3"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+    <div id="window3"> <!-- ウィンドウ部分 -->
+      <label for="popup3" id="btn_cloth3"> <!-- 閉じるボタン -->
+        <span></span>
+      </label>
+        <div id="msg3"> <!-- ウィンドウのコンテンツ -->
+            <h2>趣味</h2>
+            <p>ディズニー・コメダ珈琲・キャンプ・読書</p>
+            <p>*詳細はページ下部へ！</p>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay4">
+    <label for="popup4" id="bg_gray4"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+    <div id="window4"> <!-- ウィンドウ部分 -->
+      <label for="popup4" id="btn_cloth4"> <!-- 閉じるボタン -->
+        <span></span>
+      </label>
+        <div id="msg4"> <!-- ウィンドウのコンテンツ -->
+          <h2>職場の位置</h2>
+          <div class="Navigatemap" ><a href="https://www.google.com/maps/place/%E3%83%88%E3%83%A8%E3%82%BF%E8%87%AA%E5%8B%95%E8%BB%8A+%E6%9D%B1%E5%AF%8C%E5%A3%AB%E7%A0%94%E7%A9%B6%E6%89%80/@35.2268333,138.8994595,17z/data=!3m1!4b1!4m6!3m5!1s0x60199ce146de93e5:0xd14ccce20a952a71!8m2!3d35.2268289!4d138.9020344!16s%2Fg%2F1td13b2m?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">グーグルマップへ</a></div>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay5">
+    <label for="popup5" id="bg_gray5"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+    <div id="window5"> <!-- ウィンドウ部分 -->
+      <label for="popup5" id="btn_cloth5"> <!-- 閉じるボタン -->
+        <span></span>
+      </label>
+        <div id="msg5"> <!-- ウィンドウのコンテンツ -->
+          <img src="images/omikuji.png">
+          <h2>本日の運勢は・・・</h2>
+          <p id="omikuji">hello</p>
+          <script>
+            const myfunc = function() {
+              let result = exportResult();
+              document.getElementById("omikuji");
+              omikuji.innerHTML = "<p>" + result + "</p>";
+              
+            }
+          </script>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container w-inner">
+    <div class="header-img">
+        <img src="images/disney2.jpg" alt="">
+    </div>
+      <div class="container_service">
+          <h2>趣味詳細</h2>
+          <div class="service_block">
+            <div class="service">
+              <img src="images/disneymain.jpg" alt="">
+              <div class="title">ディズニー</div>
+              <div class="explain">ここにテキストが入ります</div>
+              <a href="">続きはこちら</a>
+              </div>
+              <div class="service">
+                <img src="images/komeda1.jpg" alt="">
+                <div class="title">コメダ珈琲</div>
+                <div class="explain">ここにテキストが入ります</div>
+                <a href="">続きはこちら</a>
+              </div>
+              <div class="service">
+                <img src="images/disney3.jpg" alt="">
+                <div class="title">プログラム勉強</div>
+                <div class="explain">ここにテキストが入ります</div>
+                <a href="">続きはこちら</a>
+            </div>
+          </div>
+          <img src="" alt>
+      </div>
+
+  </div>
+  <div class="sours w-inner">
+      <h7>DIG基礎コース　最終報告用製作品</h7>
+  </div>
+
+ 
+</body>
+
+</html>
