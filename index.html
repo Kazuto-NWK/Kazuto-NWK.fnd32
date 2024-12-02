@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>自己紹介</title>
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="script.js" async></script>
+</head>
+
+<body onload="myfunc()">
+  <div id="loading">
+    <div class="spinner"></div>
+    <div id="loading-screen"></div>
+  </div>
+
+    <input type="checkbox" id="popup">
+    <input type="checkbox" id="popup2">
+    <input type="checkbox" id="popup3">
+    <input type="checkbox" id="popup4">
+    <input type="checkbox" id="popup5">
+    <input type="checkbox" id="popup6">
+    <input type="checkbox" id="popup7">
+    <input type="checkbox" id="popup8">
+
+  <div class="header w-inner">
+    <div class="logo">
+      <img src="images/DIG logo.png" alt="DIG基礎コース">
+      <h1>自分のことを今更ながら知ってもらおう！</h1>
+    </div>
+    <ul>
+      <li><a href="">トップ</a></li>
+      <li><label for="popup" class="txt_label">出身・所属部署</label></li>
+      <li><label for="popup2" class="txt_label">どんな仕事をしているの？</label></li>
+      <li><label for="popup3" class="txt_label">趣味・特技</label></li>
+      <li><label for="popup4" class="txt_label">職場の場所</label></li>
+      <li><label for="popup5" class="txt_label">本日の運勢は・・・</label></li>
+    </ul>
+  </div>
+
+
+
+  <div id="overlay">
+    <label for="popup" class="bg_gray"></label>
+
+    <div id="window"> 
+      <label for="popup" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg"> 
+          <h2>出身・所属部署</h2>
+          <p>千葉県　市川市　出身　　　1999年3月1日生まれ　　25歳</p>
+          <p>トヨタ自動車(株)　東富士研究所管理部　試作課　部品加工係　　　2017年入社</p>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay2">
+    <label for="popup2" class="bg_gray"></label>
+
+    <div id="window2"> 
+      <label for="popup2" class="btn_cloth"> 
+      <span></span>
+      </label>
+      <div class="msg"> 
+        <h2>どんな仕事をしているの？</h2>
+        <p>様々な部署から依頼された部品・工具製作や研究に必要な追加工など幅広くやっています！</p>
+        <p>扱う素材に関しては、鉄・ステンレス・銅・チタン・樹脂など様々です</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay3">
+    <label for="popup3" class="bg_gray"></label> 
+
+    <div id="window3"> 
+      <label for="popup3" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+            <h2>趣味</h2>
+            <p>ディズニー・コメダ珈琲・キャンプ・読書etc</p>
+            <h2>特技</h2>
+            <p>・剣道 (2段)　　・空手 (初段/黒帯)</p>
+            
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay4">
+    <label for="popup4" class="bg_gray"></label>
+
+    <div id="window4">
+      <label for="popup4" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+          <h2>職場の位置</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.182412751837!2d138.9020344!3d35.2268289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60199ce146de93e5%3A0xd14ccce20a952a71!2z44OI44Oo44K_6Ieq5YuV6LuKIOadseWvjOWjq-eglOeptuaJgA!5e0!3m2!1sja!2sjp!4v1732924616888!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="Navigatemap" ><a href="https://www.google.com/maps/place/%E3%83%88%E3%83%A8%E3%82%BF%E8%87%AA%E5%8B%95%E8%BB%8A+%E6%9D%B1%E5%AF%8C%E5%A3%AB%E7%A0%94%E7%A9%B6%E6%89%80/@35.2268333,138.8994595,17z/data=!3m1!4b1!4m6!3m5!1s0x60199ce146de93e5:0xd14ccce20a952a71!8m2!3d35.2268289!4d138.9020344!16s%2Fg%2F1td13b2m?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">グーグルマップへ</a></div>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay5">
+    <label for="popup5" class="bg_gray"></label>
+
+    <div id="window5"> 
+      <label for="popup5" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+          <img src="images/omikuji.png">
+          <h2>本日の運勢は・・・</h2>
+          <p id="omikuji">hello</p>
+        </div>
+    </div>
+  </div>
+  
+  <div id="overlay6">
+    <label for="popup6" class="bg_gray"></label> 
+
+    <div id="window6"> 
+      <label for="popup6" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+          <h2>ディズニー🐭</h2>
+          <p>ディズニーリゾートに定期的に足を運んでます(4~5回/年)</p>
+          <p>友達とも行きますが一人で行くことも😁</p>
+          <p>最近はアトラクションよりも景色やフードをメインに楽しんでます!!</p>
+          <p>ちなみに今年は2回ディズニーホテルに泊まりました～</p>
+            <div class="photo">
+              <img src="images/disney4.jpg">
+              <img src="images/disney6.jpg">
+              <img src="images/disney2.jpg">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay7">
+    <label for="popup7" class="bg_gray"></label> 
+
+    <div id="window7"> 
+      <label for="popup7" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+          <h2>コメダ珈琲☕</h2>
+          <p>隔週の土曜、開店直後に入ってコーヒーを飲むのが好きです！</p>
+          <p>モーニングのパン＋海老カツパンでお腹いっぱいにするのがルーチン</p>
+          <p>色々忘れて読書やぼーっとできる貴重な時間です😝</p>
+            <div class="photo">
+              <img src="images/komeda1.jpg">
+              <img src="images/komeda2.jpg">
+              <img src="images/komeda3.jpg">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="overlay8">
+    <label for="popup8" class="bg_gray"></label> 
+
+    <div id="window8"> 
+      <label for="popup8" class="btn_cloth"> 
+        <span></span>
+      </label>
+        <div class="msg">
+          <h2>キャンプ🏕️</h2>
+          <p>秋から冬にかけてキャンプに行きます!</p>
+          <p>山梨県の富士五湖周辺がお気に入りです</p>
+          <p>寒いけど澄んだ空気の中で見る星やその中で飲むコーヒーは格別!!</p>
+          <p>焚火を囲って友人と語らう時間もGOOD!</p>
+            <div class="photo">
+              <img src="images/camp1.jpg">
+              <img src="images/camp4.jpg">
+              <img src="images/camp5.jpg">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container w-inner">
+    <div class="header-img">
+      <img src="images/disney3.jpg" alt="">
+      <a href=file:///c%3A/Users/1578880/Desktop/dig-foundations/DIG%E7%99%BA%E8%A1%A8%E7%94%A8/gators/index.html target="_blank"> <img src="images/Gator.png" alt="アリゲーター演習" id="gator"></a>
+      <p id="gator_copy">&copy; いらすとや</p>
+      </div>
+    </div>
+
+    <div class="container_hobby">
+        <h2>趣味詳細</h2>
+        <div class="hobby_block">
+            <div class="hobby">
+              <img src="images/disneymain.jpg" alt="">
+            <div class="title">ディズニー</div>
+            <div class="btn-container">
+              <label for="popup6" class="txt_label">詳細はこちら</label> 
+            </div>
+            </div>
+
+            <div class="hobby">
+                <img src="images/komeda1.jpg" alt="">
+              <div class="title">コメダ珈琲</div>
+              <div class="btn-container">
+                <label for="popup7" class="txt_label">詳細はこちら</label> 
+              </div>
+            </div>
+
+            <div class="hobby">
+              <img src="images/camp2.jpg" alt="">
+            <div class="title">キャンプ</div>
+            <div class="btn-container">
+              <label for="popup8" class="txt_label">詳細はこちら</label> 
+            </div>
+            </div>
+        </div>
+        <img src="" alt>
+    </div>
+  </div>
+
+  <div class="source w-inner">
+      <h7>DIG基礎コース　最終報告用作品</h7>
+  </div>
+</body>
+
+</html>
