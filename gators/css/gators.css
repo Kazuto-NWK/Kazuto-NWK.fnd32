@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+}
+
+
+#frame  {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+#titleText {
+  color: rgb(243, 29, 29);
+  font-weight:bolder;
+}
+
+.photo {
+  width: 150px;
+  height: 80px;
+}
+
+#copy {
+  font-size: 6px;
+  margin-top: 0px;
+  margin-left: 120px;
+}
+
+
+#input-Box{
+  border: 1px solid black;
+}
+
+
+#botton {
+  text-align: center;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.Number of crocodiles {
+  text-align: center;
+}
+
+#frame2  {
+  margin:auto ;
+  width: 300px;
+  text-align: center;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
